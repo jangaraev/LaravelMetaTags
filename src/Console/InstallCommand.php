@@ -33,6 +33,11 @@ class InstallCommand extends Command
     {
         $namespace = Str::replaceLast('\\', '', $this->getLaravel()->getNamespace());
 
+        if (file_exists($this->getLaravel()->bootstrapPath('providers.php'))) {
+            // @phpstan-ignore-next-line
+            return ServiceProvider::addProviderToBootstrapFile("{$namespace}\\Providers\\MetaTagsServiceProvider");
+        }
+
         /** @psalm-suppress UndefinedFunction */
         $config = file_get_contents(config_path('app.php'));
         $line = $namespace . '\Providers\MetaTagsServiceProvider::class';
