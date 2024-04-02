@@ -82,6 +82,8 @@ class Tag implements TagInterface, HasVisibilityConditions, \Stringable
         if (!is_null($value)) {
             return $key . '="' . $value . '"';
         }
+
+        return null;
     }
 
     /**
