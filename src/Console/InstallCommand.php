@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 class InstallCommand extends Command
 {
     protected $signature = 'meta-tags:install';
-    
+
     protected $description = 'Install all of the MetaTags package resources';
 
     public function handle(): void
@@ -35,7 +35,8 @@ class InstallCommand extends Command
 
         if (file_exists($this->getLaravel()->bootstrapPath('providers.php'))) {
             // @phpstan-ignore-next-line
-            return ServiceProvider::addProviderToBootstrapFile("{$namespace}\\Providers\\MetaTagsServiceProvider");
+            ServiceProvider::addProviderToBootstrapFile("{$namespace}\\Providers\\MetaTagsServiceProvider");
+            return;
         }
 
         /** @psalm-suppress UndefinedFunction */
