@@ -160,7 +160,7 @@ class TitleMetaTagsTest extends TestCase
         $this->assertEquals(
             [
                 'content' => 'test title',
-                'tag'     => 'title',
+                'tag' => 'title',
             ],
             $this->makeMetaTags()->setTitle('test title')->getTitle()->toArray()
         );
