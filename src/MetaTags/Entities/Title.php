@@ -65,7 +65,7 @@ class Title implements TitleInterface, HasVisibilityConditions, \Stringable
     protected function makeTitle(): string
     {
         $separator = sprintf(' %s ', $this->separator);
-        $title     = '';
+        $title = '';
 
         if (!empty($this->prepend)) {
             $parts = $this->rtl ? $this->prepend : array_reverse($this->prepend);
