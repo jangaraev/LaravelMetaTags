@@ -78,8 +78,7 @@ class Title implements TitleInterface, HasVisibilityConditions, \Stringable
             } else {
                 $title .= $separator . $this->title;
             }
-
-        } else if (!empty($this->title)) {
+        } elseif (!empty($this->title)) {
             $title = $this->title;
         }
 
@@ -107,5 +106,23 @@ class Title implements TitleInterface, HasVisibilityConditions, \Stringable
     public function getTitle(): string
     {
         return $this->makeTitle();
+    }
+
+    /**
+     * Get prepends title
+     * @return array
+     */
+    public function getPrepends(): array
+    {
+        return $this->prepend;
+    }
+
+    /**
+     * Get prepend title
+     * @return string
+     */
+    public function getPrepend($index = 0): ?string
+    {
+        return $this->prepend[$index] ?? null;
     }
 }
