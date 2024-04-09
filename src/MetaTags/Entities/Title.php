@@ -98,7 +98,7 @@ class Title implements TitleInterface, HasVisibilityConditions, \Stringable
     public function toArray(): array
     {
         return [
-            'tag'     => 'title',
+            'tag' => 'title',
             'content' => $this->makeTitle()
         ];
     }
