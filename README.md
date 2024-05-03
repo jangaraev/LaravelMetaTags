@@ -29,7 +29,7 @@ becoming a better developer. So, don't hesitate to jump in and start contributin
 [![Build Status](https://travis-ci.org/butschster/LaravelMetaTags.svg)](https://travis-ci.org/butschster/LaravelMetaTags) [![Latest Stable Version](https://poser.pugx.org/butschster/meta-tags/v/stable)](https://packagist.org/packages/butschster/meta-tags) [![Total Downloads](https://poser.pugx.org/butschster/meta-tags/downloads)](https://packagist.org/packages/butschster/meta-tags) [![License](https://poser.pugx.org/butschster/meta-tags/license)](https://packagist.org/packages/butschster/meta-tags)
 
 ## Supercharge Your Development with Buggregator
-Pair it with our package for a more robust development environment. For more informatino visit [buggregator.dev](https://buggregator.dev)
+Pair it with our tool for a more robust development environment. For more information visit [buggregator.dev](https://buggregator.dev)
 <img src="https://github.com/buggregator/.github/assets/773481/24981ab5-510a-453c-a3c5-8a6f5e7bf358">
 
 ## Features
