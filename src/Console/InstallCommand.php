@@ -3,6 +3,7 @@
 namespace Butschster\Head\Console;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 
 class InstallCommand extends Command
