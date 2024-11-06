@@ -23,10 +23,13 @@ class Meta implements MetaInterface, \Stringable
 
     public const PLACEMENT_FOOTER = 'footer';
 
+    private ?Repository $config = null;
+
     public function __construct(
         protected Manager $packageManager,
-        private ?Repository $config = null,
+        ?Repository $config = null,
     ) {
+        $this->config = $config;
         $this->initPlacements();
     }
 
